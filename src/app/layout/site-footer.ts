@@ -6,7 +6,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   template: `
     <footer class="bg-ink-900 text-civic-100">
       <div class="mx-auto max-w-6xl px-5 py-12">
-        <p class="font-display text-2xl font-extrabold text-white">Houston ALPR Watch</p>
+        <p class="font-display text-2xl font-extrabold text-white">DeFlock Houston</p>
         <p class="measure mt-3 text-sm leading-relaxed text-civic-300">
           Everything published here comes from public records requests, vendor audit exports, and
           city contract documents. Deflock Houston is a volunteer project, not affiliated with any government agency. The site is maintained by volunteers, no political parties or candidiates. No GenAI was used in the creation of this site, and no data was used to train any AI models.
