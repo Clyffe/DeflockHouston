@@ -1,0 +1,43 @@
+<app-hero />
+
+<section id="how-it-works" class="mx-auto max-w-6xl scroll-mt-24 px-5 py-20">
+  <h1 class="text-section font-bold">What Are Flock Cameras?</h1>
+  <b class="measure mt-2 leading-relaxed text-ink-700">
+    Flock cameras are a network of high-speed, computer-controlled cameras that automatically read and record license plate information from passing vehicles. They do not keep you safer. They track and store massive amounts of data about you. They are used to stalk and harass, with no oversight, and little internal auditing. 
+  </b>
+  <p>Flock cameras, and other ALPRs like them do not  help keep you safe. Here are some real world examples of how this data is being used:</p>
+  <ul style="list-style-type: circle;">
+    <li class="mt-8"><p><a class="text-signal-400 hover:underline" style="color:#384D9C" href="https://www.houstonpublicmedia.org/articles/police/2026/08/25/560301/flock-cameras-katy-police-officer/">Stalking of exes</a>, <a style="color:#384D9C" class="text-signal-400 hover:underline" href="https://www.cnn.com/2026/08/26/us/flock-kentucky-police-officer-arrest">girlfriends,</a> and <a style="color:#384D9C" class="text-signal-400 hover:underline"  href="https://www.404media.co/footage-shows-cop-stalking-woman-he-met-on-a-tv-set-after-surveilling-her-with-a-license-plate-reader/">other individuals.</a></p></li>
+    <li class="mt-8"><p><a class="text-signal-400 hover:underline" style="color:#384D9C" href="https://www.404media.co/a-texas-cop-searched-license-plate-cameras-nationwide-for-a-woman-who-got-an-abortion//">Hunting a woman across the state</a> <a a style="color:#384D9C" class="text-signal-400 hover:underline"  href="https://www.snopes.com/news/2026/08/04/texas-police-83k-cameras-abortion/"> because she got an abortion.</a></p></li>
+    <li class="mt-8"><p><a class="text-signal-400 hover:underline" style="color:#384D9C" href="https://www.404media.co/ice-secret-service-navy-all-had-access-to-flocks-nationwide-network-of-cameras/">Sharing the info with DHS</a> <a a style="color:#384D9C" class="text-signal-400 hover:underline"  href="https://immpolicytracking.org/policies/reported-ice-accessing-flock-automated-license-plate-reader-cameras-via-local-law-enforcement/"> and ICE.</a></p></li>
+  </ul>
+</section>
+
+<section id="map" class="bg-civic-700 py-16 text-white">
+  <div class="mx-auto max-w-6xl px-5">
+    <h2 class="text-section font-bold">Known ALPR cameras in the Houston area</h2>
+  </div>
+  <div class="mt-8 px-2 text-ink-900 sm:px-4">
+    <app-alpr-map />
+  </div>
+</section>
+
+<section id="faq" class="mx-auto max-w-4xl scroll-mt-24 px-5 py-20">
+  <h2 class="text-section font-bold">Frequently Asked Questions</h2>
+  <div class="mt-10">
+    <app-faq-accordion [entries]="faqEntries" />
+  </div>
+</section>
+
+<section id="take-action" class="scroll-mt-24 bg-paper-100">
+  <div class="mx-auto max-w-4xl px-5 py-20">
+    <h2 class="text-section font-bold">Start with your own neighborhood</h2>
+    <p class="measure mt-4 leading-relaxed text-ink-700">
+    </p>
+    <a
+      routerLink="/contact"
+      class="mt-8 inline-block bg-civic-700 px-6 py-3 font-semibold text-white transition-colors hover:bg-civic-900"
+      >Write Your Local Officials!</a
+    >
+  </div>
+</section>
