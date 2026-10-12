@@ -5,6 +5,3 @@
 .DS_Store
 *.log
 .env
-
-# Fetched third-party assets (see scripts/fetch-assets.sh)
-/public/assets/hero-alpr-camera.jpg
