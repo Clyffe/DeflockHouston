@@ -97,13 +97,15 @@ export class AlprMapComponent implements OnDestroy {
 
   private async init(): Promise<void> {
     let L: LeafletNS;
-    try {
-      L = await import('leaflet');
-    } catch (err) {
-      console.error('[app-alpr-map] Failed to load Leaflet', err);
-      this.error.set('Map library failed to load. Check that the "leaflet" package is installed.');
-      return;
-    }
+  try {
+  const mod = await import('leaflet');
+  // Leaflet is UMD/CommonJS; production builds expose it only as the default export.
+  L = ((mod as unknown as { default?: LeafletNS }).default ?? mod) as LeafletNS;
+} catch (err) {
+  console.error('[app-alpr-map] Failed to load Leaflet', err);
+  this.error.set('Map library failed to load. Check that the "leaflet" package is installed.');
+  return;
+}
     this.L = L;
 
     const el = this.mapEl.nativeElement;
