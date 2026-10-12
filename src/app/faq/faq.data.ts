@@ -29,7 +29,7 @@ export const FAQ_ENTRIES: FaqEntry[] = [
     id: 'who-can-search',
     question: 'Who can search the data once it exists?',
     answer: [
-      'Any officer with the contracting agency, any affiliated parties the owner shares data with, such as other law enforcement agencies.',
+      'Any officer with the contracting agency, any affiliated parties the owner shares data with, such as other law enforcement agencies, the FBI, DHS, and ICE.',
       'Each search records a reason typed by the officer. Those reason fields are often a case number or <a href="https://ij.org/the-ij-database-of-alpr-abuse/" class="text-signal-400 hover:underline">a single word</a>, and nothing in the system verifies them.',
     ],
   },
@@ -39,19 +39,6 @@ export const FAQ_ENTRIES: FaqEntry[] = [
     answer: [
       'Flock and other vendors say that ALPRs reduce crime, but both independent investigations and internal <a href="https://www.wired.com/story/flock-safety-license-plate-readers-crime/" class="text-signal-400 hover:underline">audits show mixed results.</a>',
     ],
-  },
-  {
-    id: 'misreads',
-    question: 'What happens when a plate is misread?',
-    answer: [
-    ],
-  },
-  {
-    id: 'audit-logs',
-    question: 'What is in the audit logs published here?',
-    answer: [
-    ],
-    links: [{ label: 'Open the search activity dashboard', href: '/dashboard' }],
   },
   {
     id: 'take-action',
